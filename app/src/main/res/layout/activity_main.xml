@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background_color"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Memi's music"
+        android:fontFamily="cursive"/>
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_marginTop="200dp"
+            android:layout_width = "250dp"
+            android:layout_height = "250dp"
+            android:src = "@drawable/memi"
+            app:civ_border_color = "#EEEEEE"
+            app:civ_border_width = "4dp"
+            app:civ_shadow = "true"
+            app:civ_shadow_radius = "10"
+            app:civ_shadow_color = "#8BC34A"/>
+
+        <TextView
+            android:id="@+id/songId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center_horizontal" />
+
+        <SeekBar
+            android:id="@+id/seekbarId"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/preButtonId"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="100dp"
+                android:src="@drawable/previous_foreground"
+                android:scaleType="fitXY"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:baselineAligned="false" />
+            <ImageButton
+                android:id="@+id/playbuttonId"
+                android:src="@drawable/ic_baseline_play_arrow_24"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:layout_marginLeft="30dp" />
+            <ImageButton
+                android:id="@+id/nextButtonId"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/next_foreground"
+                android:scaleType="fitXY"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:baselineAligned="false" />
+
+        </LinearLayout>
+
+       </LinearLayout>
+
+
+
+
+
